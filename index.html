@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+        <title>Jackson_Electronics</title>
+        <style>
+                body {
+                    border: 2px solid black;
+                    padding: 10px;
+                    background-color: rgb(180, 229, 250);
+                }
+                .box{
+                    margin: auto;
+                    border: 2px solid black;
+                    align-items: center;
+                    text-align: center;
+                    width: 300px;
+                    border-radius: 20px;
+                    background: rgb(0, 242, 255);
+                    box-shadow: 8px 8px 5px gray;
+                    padding: 0px
+                }
+                h1{
+                    margin: 0px;
+                }
+                hr {
+                    border: 1.5px solid black;
+                    margin-right: 4%;
+                }
+                input {
+                    border-radius: 5px;
+                }
+                input[type="reset"]:hover {
+                    background-color: #f44336;
+                    color: white;
+                }
+                input[type="submit"]:hover {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+            </style>
+    </head>
+    <body>
+        <div class="box">
+            <h1>Jackson</h1>
+            <hr style="margin: 0px; border: 3px solid black">
+            <h1>Electronics</h1>
+        </div>
+        <div style="text-align: center">
+            <h2>Registration Form</h2>
+            <p>Register your Jackson Electronics product here</p>
+        </div>
+
+
+        <form style="margin-left: 4%;">
+            <table>
+                <tr>
+                    <td style="width: 230px;" >First Name:</td>
+                    <td><input type="text" required></td>
+                    <td>Last Name:</td>
+                    <td><input type="text" required></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td style="width: 230px;">Address #1:</td>
+                    <td><input type="text" style="width: 230px;" required></td>
+                </tr>
+                <tr>
+                    <td>Address #2:</td>
+                    <td><input type="text" style="width: 230px;" required></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td style="width: 230px;">City:</td>
+                    <td><input type="text" required></td>
+                    <td>State:</td>
+                    <td><input type="text" style="width: 40px;" required></td>
+                    <td>Zip:</td>
+                    <td><input type="text" style="width: 80px;" required></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td style="width: 230px;">Country:</td>
+                    <td><input type="text" value="United States" style="width: 230px;" required></td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td style="width: 230px;">Product:</td>
+                    <td>
+                        <select>
+                            <option value="ScanMaster">ScanMaster</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 230px;">Date Purchased:</td>
+                    <td><input type="date" style="width: 230px;" required></td>
+                </tr>
+                <tr>
+                    <td>Serial #:</td>
+                    <td><input type="text" style="width: 230px;" required></td>
+                </tr>
+                <tr>
+                    <td>Used for:</td>
+                    <td><input type="radio" value="Home" name="radio">Home</td>
+                    <td><input type="radio" value="Educational Instituntion" name="radio">Educational Instituntion</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" value="Business" name="radio">Business</td>
+                    <td><input type="radio" value="Other" name="radio">Other</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" value="Governmment" name="radio">Governmment</td>
+                </tr>
+                <tr>
+                    <td>System (check all that apply):</td>
+                    <td><input type="checkbox" value="Windows">Windows</td>
+                    <td><input type="checkbox" value="UNIX">UNIX</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" value="Macintosh">Macintosh</td>
+                    <td><input type="checkbox" value="Other">Other</td>
+                </tr>
+            </table>
+                <hr>
+            <table>
+                <tr>
+                    <td width="230px" >Comments?:</td>
+                    <td><textarea style="width: 500px; height: 100px; border-radius: 5px;" required></textarea></td>
+                </tr>
+            </table>
+            <div style="text-align: center">
+                <input type="submit" style="cursor: pointer; transition: background-color 1s ease;" value="Click to register">
+                <input type="reset" style="cursor: pointer; transition: background-color 1s ease;" value="Click to cancel">
+            </div>
+        </form>
+    </body>
+</html>
